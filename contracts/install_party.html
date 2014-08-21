@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script>
+    if (typeof(window.eth) === "undefined") {
+      document.write('Please run in AlethZero.<br/>');
+    }
+  </script>
+  <script type="text/javascript"
+	  src="install_party.js">
+  </script>
+  <style>body { font-family: sans; }</style>
+<title>Ethereum Install Party!</title>
+</head>
+<body>
+  <h1>Let's install Ethereum <span id="display">somewhere cool</span>!</h1>
+  <div id="change_location">
+    <b>Set location:</b><input type="text" id="location" /><br />
+    <a id="change" href="javascript:void(0)" onclick="change_location();">change</a>
+  </div>
+</body>
+</html>

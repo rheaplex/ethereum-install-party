@@ -1,0 +1,7 @@
+init:
+    contract.storage[1000] = msg.sender
+    contract.storage[1001] = "nowhere"
+
+code:
+    if msg.sender == contract.storage[1000]:
+        contract.storage[1001] = msg.data[0]

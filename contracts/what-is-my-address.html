@@ -1,0 +1,17 @@
+<html>
+<head>
+  <script>
+    if (typeof(window.eth) === "undefined") {
+      document.write('Please run in AlethZero.<br/>');
+    }
+  </script>
+  <style>body { font-family: sans; }</style>
+<title>My Ethereum Address</title>
+</head>
+<body>
+  Your primary Ethereum address is:<br />
+  <script>
+    document.write(eth.secretToAddress(eth.key));
+  </script>
+</body>
+</html>

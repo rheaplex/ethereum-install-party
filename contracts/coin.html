@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script>
+    if (typeof(window.eth) === "undefined") {
+      document.write('Please run in AlethZero.<br/>');
+    }
+  </script>
+  <script type="text/javascript"
+	  src="coin.js">
+  </script>
+  <style>body { font-family: sans; }</style>
+<title>Coin</title>
+</head>
+<body>
+  <h1>Coin</h1>
+  <h2>My Account</h2>
+  <b>My account:</b><span id="account"></span><br />
+  <b>My balance:</b><span id="balance"></span><br />
+
+  <h2>Send Coins</h2>
+  <b>Recipient:</b><input type="text" id="recipient" /><br />
+  <b>Amount:</b><input type="text" id="amount" /> (in coins).<br />
+  <a id="change" href="javascript:void(0)" onclick="send_coins();">send</a>
+
+  <p><i><span id="notice"></id></i></p>
+</body>
+</html>
